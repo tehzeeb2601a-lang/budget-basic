@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>BudgetBasics - Smart Money Habits</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ===== NAVBAR ===== -->
+    <header>
+        <nav class="navbar">
+
+            <div class="logo">
+                <span>🐝</span> BudgetBasics
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#basics">Budgeting Basics</a></li>
+                <li><a href="#needs">Needs vs Wants</a></li>
+                <li><a href="#saving">Savings</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <button class="menu-btn" onclick="toggleMenu()">☰</button>
+
+        </nav>
+    </header>
+
+
+    <!-- ===== HOME SECTION ===== -->
+    <section id="home" class="hero">
+
+        <div class="hero-content">
+
+            <div class="hero-text">
+
+                <span class="small-title">
+                    NEXTGEN BUDGETBEE
+                </span>
+
+                <h1>
+                    Learn to Manage Your
+                    <span>Money Smarter</span>
+                </h1>
+
+                <p>
+                    BudgetBasics is a student-friendly educational
+                    website that helps you understand budgeting,
+                    saving, spending and better money habits.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="#basics" class="btn primary-btn">
+                        Start Learning
+                    </a>
+
+                    <a href="#needs" class="btn secondary-btn">
+                        Explore More
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- MONEY CARD -->
+            <div class="money-card">
+
+                <div class="card-top">
+                    <span>💰</span>
+                    <span>Smart Budget</span>
+                </div>
+
+                <h2>Rs. 20,000</h2>
+
+                <p>Sample Monthly Income</p>
+
+                <div class="budget-row">
+                    <span>Needs</span>
+                    <strong>50%</strong>
+                </div>
+
+                <div class="progress">
+                    <div class="progress-needs"></div>
+                </div>
+
+
+                <div class="budget-row">
+                    <span>Wants</span>
+                    <strong>30%</strong>
+                </div>
+
+                <div class="progress">
+                    <div class="progress-wants"></div>
+                </div>
+
+
+                <div class="budget-row">
+                    <span>Savings</span>
+                    <strong>20%</strong>
+                </div>
+
+                <div class="progress">
+                    <div class="progress-saving"></div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ===== QUICK INTRO ===== -->
+    <section class="intro" id="basics">
+
+        <div class="section-heading">
+
+            <span>LEARN • PLAN • SAVE</span>
+
+            <h2>
+                Your Simple Guide to
+                <span>Better Budgeting</span>
+            </h2>
+
+            <p>
+                Understand your income, expenses, needs, wants
+                and savings through simple examples and
+                interactive learning.
+            </p>
+
+        </div>
+
+
+        <div class="feature-container">
+
+            <div class="feature-card">
+
+                <div class="icon">💵</div>
+
+                <h3>Income</h3>
+
+                <p>
+                    Learn where your money comes from and
+                    understand your monthly income.
+                </p>
+
+            </div>
+
+
+            <div class="feature-card">
+
+                <div class="icon">🛒</div>
+
+                <h3>Expenses</h3>
+
+                <p>
+                    Understand where your money goes and
+                    identify unnecessary spending.
+                </p>
+
+            </div>
+
+
+            <div class="feature-card">
+
+                <div class="icon">🎯</div>
+
+                <h3>Savings Goals</h3>
+
+                <p>
+                    Set simple saving goals and learn how
+                    small savings can build better habits.
+                </p>
+
+            </div>
+
+
+            <div class="feature-card">
+
+                <div class="icon">📊</div>
+
+                <h3>Budget Planning</h3>
+
+                <p>
+                    Learn how to divide your money into
+                    useful spending categories.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ===== NEEDS VS WANTS ===== -->
+    <section class="needs-section" id="needs">
+
+        <div class="needs-content">
+
+            <div>
+
+                <span class="section-tag">
+                    SMART SPENDING
+                </span>
+
+                <h2>
+                    Need or <span>Want?</span>
+                </h2>
+
+                <p>
+                    One of the most important budgeting skills
+                    is understanding the difference between
+                    things you really need and things you simply want.
+                </p>
+
+                <button class="btn primary-btn"
+                        onclick="showMessage()">
+                    Learn the Difference
+                </button>
+
+                <p id="message"></p>
+
+            </div>
+
+
+            <div class="need-want-cards">
+
+                <div class="nw-card need-card">
+
+                    <div>✅</div>
+
+                    <h3>Needs</h3>
+
+                    <p>
+                        Things that are important for daily
+                        life and education.
+                    </p>
+
+                    <ul>
+                        <li>Food</li>
+                        <li>Transport</li>
+                        <li>Books</li>
+                    </ul>
+
+                </div>
+
+
+                <div class="nw-card want-card">
+
+                    <div>✨</div>
+
+                    <h3>Wants</h3>
+
+                    <p>
+                        Things that are enjoyable but
+                        may not be necessary.
+                    </p>
+
+                    <ul>
+                        <li>Gaming</li>
+                        <li>Extra Shopping</li>
+                        <li>Entertainment</li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ===== 50-30-20 SECTION ===== -->
+    <section class="rule-section" id="saving">
+
+        <div class="section-heading">
+
+            <span>POPULAR BUDGETING GUIDELINE</span>
+
+            <h2>
+                The <span>50-30-20</span> Rule
+            </h2>
+
+            <p>
+                A simple educational guideline for dividing
+                your monthly income.
+            </p>
+
+        </div>
+
+
+        <div class="rule-container">
+
+            <div class="rule-box">
+                <strong>50%</strong>
+                <h3>Needs</h3>
+                <p>Essential expenses</p>
+            </div>
+
+            <div class="rule-box">
+                <strong>30%</strong>
+                <h3>Wants</h3>
+                <p>Optional spending</p>
+            </div>
+
+            <div class="rule-box">
+                <strong>20%</strong>
+                <h3>Savings</h3>
+                <p>Future goals</p>
+            </div>
+
+        </div>
+
+        <p class="note">
+            * This is an educational guideline and can be adjusted
+            according to individual circumstances.
+        </p>
+
+    </section>
+
+
+    <!-- ===== CTA ===== -->
+    <section class="cta" id="contact">
+
+        <div>
+
+            <span>READY TO START?</span>
+
+            <h2>
+                Build Better Money Habits Today.
+            </h2>
+
+            <p>
+                Learn budgeting basics and take control
+                of your spending decisions.
+            </p>
+
+            <a href="#home" class="btn white-btn">
+                Back to Top ↑
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- ===== FOOTER ===== -->
+    <footer>
+
+        <div class="footer-content">
+
+            <div>
+                <h2>🐝 BudgetBasics</h2>
+
+                <p>
+                    Smart money habits for students.
+                </p>
+            </div>
+
+            <div>
+                <h3>Quick Links</h3>
+
+                <a href="#home">Home</a>
+                <a href="#basics">Basics</a>
+                <a href="#needs">Needs vs Wants</a>
+                <a href="#saving">Savings</a>
+            </div>
+
+            <div>
+                <h3>Contact</h3>
+
+                <p>📧 info@budgetbasics.com</p>
+                <p>📞 0300-1234567</p>
+            </div>
+
+        </div>
+
+        <div class="copyright">
+            © 2026 BudgetBasics | Educational Website
+        </div>
+
+    </footer>
+
+    <!-- ================= STEP 2: BUDGETING BASICS ================= -->
+
+<section class="basics-section" id="basics">
+
+    <div class="section-heading">
+        <span>BUDGETING BASICS</span>
+
+        <h2>
+            Understand Your <span>Money</span>
+        </h2>
+
+        <p>
+            Budget banane ke liye sabse pehle apni income,
+            expenses, needs, wants aur savings ko samajhna zaroori hai.
+        </p>
+    </div>
+
+
+    <div class="basics-cards">
+
+        <!-- Income -->
+        <div class="basic-card">
+            <div class="basic-icon">💰</div>
+
+            <h3>Income</h3>
+
+            <p>
+                Income wo paisa hai jo aapko allowance,
+                scholarship, part-time work ya kisi aur source
+                se milta hai.
+            </p>
+
+            <div class="example">
+                Example: Rs. 20,000
+            </div>
+        </div>
+
+
+        <!-- Fixed Expenses -->
+        <div class="basic-card">
+            <div class="basic-icon">📌</div>
+
+            <h3>Fixed Expenses</h3>
+
+            <p>
+                Aise expenses jo har month mostly same
+                rehte hain aur jinhein plan karna easy hota hai.
+            </p>
+
+            <div class="example">
+                Example: Transport
+            </div>
+        </div>
+
+
+        <!-- Variable Expenses -->
+        <div class="basic-card">
+            <div class="basic-icon">🛍️</div>
+
+            <h3>Variable Expenses</h3>
+
+            <p>
+                Aise expenses jo har month change ho sakte hain,
+                jaise food, shopping aur entertainment.
+            </p>
+
+            <div class="example">
+                Example: Shopping
+            </div>
+        </div>
+
+
+        <!-- Savings -->
+        <div class="basic-card">
+            <div class="basic-icon">🎯</div>
+
+            <h3>Savings</h3>
+
+            <p>
+                Income ka wo hissa jo future goals aur
+                unexpected needs ke liye save kiya jata hai.
+            </p>
+
+            <div class="example">
+                Example: Rs. 4,000
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- SAMPLE BUDGET -->
+
+    <div class="sample-budget">
+
+        <div class="budget-info">
+
+            <span>SAMPLE STUDENT BUDGET</span>
+
+            <h2>Monthly Budget</h2>
+
+            <p>
+                Ye sirf learning ke liye ek sample budget hai.
+            </p>
+
+        </div>
+
+
+        <div class="budget-table">
+
+            <div class="table-row heading">
+                <span>Category</span>
+                <span>Amount</span>
+            </div>
+
+            <div class="table-row">
+                <span>💵 Income</span>
+                <strong>Rs. 20,000</strong>
+            </div>
+
+            <div class="table-row">
+                <span>🏠 Needs</span>
+                <strong>Rs. 10,000</strong>
+            </div>
+
+            <div class="table-row">
+                <span>🛍️ Wants</span>
+                <strong>Rs. 6,000</strong>
+            </div>
+
+            <div class="table-row">
+                <span>🎯 Savings</span>
+                <strong>Rs. 4,000</strong>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- KNOWLEDGE CHECK -->
+
+    <div class="knowledge-box">
+
+        <span>🧠 QUICK KNOWLEDGE CHECK</span>
+
+        <h2>
+            Which one is a saving?
+        </h2>
+
+        <div class="quiz-options">
+
+            <button onclick="checkAnswer('shopping')">
+                🛍️ Buying new clothes
+            </button>
+
+            <button onclick="checkAnswer('food')">
+                🍔 Buying fast food
+            </button>
+
+            <button onclick="checkAnswer('saving')">
+                💰 Putting money aside for a goal
+            </button>
+
+        </div>
+
+        <p id="quiz-result"></p>
+
+    </div>
+
+</section>
+
+
+<!-- ================= NEEDS VS WANTS ================= -->
+
+<section class="needs-section" id="needs">
+
+    <div class="section-heading dark-heading">
+
+        <span>SMART SPENDING</span>
+
+        <h2>
+            Needs <span>vs</span> Wants
+        </h2>
+
+        <p>
+            Har purchase se pehle socho:
+            "Kya mujhe iski zaroorat hai ya main sirf isay chahta hoon?"
+        </p>
+
+    </div>
+
+
+    <div class="classification-container">
+
+        <!-- NEED -->
+        <div class="classification-card need">
+
+            <div class="classification-icon">
+                ✅
+            </div>
+
+            <h2>Needs</h2>
+
+            <p>
+                Needs wo cheezen hain jo daily life,
+                education ya basic requirements ke liye
+                important hoti hain.
+            </p>
+
+            <div class="item-list">
+
+                <div>🍎 Food</div>
+                <div>📚 Books</div>
+                <div>🚌 Transport</div>
+                <div>🏠 Basic Requirements</div>
+
+            </div>
+
+        </div>
+
+
+        <!-- WANT -->
+        <div class="classification-card want">
+
+            <div class="classification-icon">
+                ✨
+            </div>
+
+            <h2>Wants</h2>
+
+            <p>
+                Wants wo cheezen hain jo enjoyable hoti hain
+                lekin basic requirement nahi hoti.
+            </p>
+
+            <div class="item-list">
+
+                <div>🎮 Gaming</div>
+                <div>👕 Extra Shopping</div>
+                <div>🍿 Entertainment</div>
+                <div>🎧 New Accessories</div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- INTERACTIVE QUESTION -->
+
+    <div class="need-question">
+
+        <span>🎯 TRY IT YOURSELF</span>
+
+        <h2>
+            A new gaming subscription is a...
+        </h2>
+
+        <div class="answer-buttons">
+
+            <button onclick="checkNeedWant('need')">
+                Need
+            </button>
+
+            <button onclick="checkNeedWant('want')">
+                Want
+            </button>
+
+        </div>
+
+        <p id="need-want-result"></p>
+
+    </div>
+
+</section>
+
+<!-- ================= STEP 3 ================= -->
+
+<section class="rule-section" id="rule">
+
+    <div class="section-title">
+        <h2>50-30-20 Budget Rule</h2>
+        <p>A simple way to divide your monthly income</p>
+    </div>
+
+    <div class="rule-container">
+
+        <div class="rule-card">
+            <div class="rule-number">50%</div>
+            <h3>Needs</h3>
+            <p>
+                Use 50% of your income for important expenses
+                like food, transport and education.
+            </p>
+        </div>
+
+        <div class="rule-card">
+            <div class="rule-number">30%</div>
+            <h3>Wants</h3>
+            <p>
+                Use 30% for things you enjoy, such as shopping,
+                entertainment and hobbies.
+            </p>
+        </div>
+
+        <div class="rule-card">
+            <div class="rule-number">20%</div>
+            <h3>Savings</h3>
+            <p>
+                Keep 20% of your income for savings and future goals.
+            </p>
+        </div>
+
+    </div>
+
+    <!-- Calculator -->
+
+    <div class="budget-calculator">
+
+        <h3>💰 Calculate Your Budget</h3>
+
+        <p>Enter your monthly income:</p>
+
+        <input
+            type="number"
+            id="income"
+            placeholder="Enter income"
+        >
+
+        <button onclick="calculateBudget()">
+            Calculate Budget
+        </button>
+
+        <div id="budgetResult"></div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= SAVINGS GOALS ================= -->
+
+<section class="savings-section" id="saving">
+
+    <div class="section-title">
+        <h2>🎯 Savings Goals</h2>
+        <p>Plan your savings and reach your financial goals</p>
+    </div>
+
+    <div class="saving-container">
+
+        <div class="saving-card">
+
+            <h3>Set Your Goal</h3>
+
+            <input
+                type="text"
+                id="goalName"
+                placeholder="Goal name e.g. New Laptop"
+            >
+
+            <input
+                type="number"
+                id="targetAmount"
+                placeholder="Target amount"
+            >
+
+            <input
+                type="number"
+                id="currentSaving"
+                placeholder="Current savings"
+            >
+
+            <input
+                type="number"
+                id="monthlySaving"
+                placeholder="Monthly contribution"
+            >
+
+            <button onclick="calculateSaving()">
+                Calculate Goal
+            </button>
+
+            <div id="savingResult"></div>
+
+        </div>
+
+        <div class="saving-info">
+
+            <h3>💡 Saving Tips</h3>
+
+            <ul>
+                <li>Set a clear savings goal.</li>
+                <li>Save money every month.</li>
+                <li>Avoid unnecessary spending.</li>
+                <li>Track your progress regularly.</li>
+                <li>Stay consistent with your plan.</li>
+            </ul>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
