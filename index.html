@@ -798,6 +798,650 @@
 
 </section>
 
+<!-- ================= STEP 4 ================= -->
+
+<section class="expense-section" id="expenses">
+
+    <div class="section-title">
+        <h2>🧾 Expense Planner</h2>
+        <p>Track your expenses and manage your money better</p>
+    </div>
+
+    <div class="expense-container">
+
+        <div class="expense-form">
+
+            <h3>Add Your Expense</h3>
+
+            <input
+                type="text"
+                id="expenseName"
+                placeholder="Expense name e.g. Food"
+            >
+
+            <input
+                type="number"
+                id="expenseAmount"
+                placeholder="Amount"
+            >
+
+            <button onclick="addExpense()">
+                Add Expense
+            </button>
+
+        </div>
+
+
+        <div class="expense-list">
+
+            <h3>Your Expenses</h3>
+
+            <div id="expenseItems">
+                <p>No expenses added yet.</p>
+            </div>
+
+            <div class="expense-total">
+                Total: <span id="totalExpense">0</span>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= MONEY MISTAKES ================= -->
+
+<section class="mistakes-section" id="mistakes">
+
+    <div class="section-title">
+        <h2>⚠️ Common Money Mistakes</h2>
+        <p>Learn how to avoid common spending mistakes</p>
+    </div>
+
+    <div class="mistakes-container">
+
+        <div class="mistake-card">
+            <div class="mistake-icon">🛍️</div>
+            <h3>Impulse Buying</h3>
+            <p>
+                Buying something suddenly without thinking
+                about whether you really need it.
+            </p>
+        </div>
+
+        <div class="mistake-card">
+            <div class="mistake-icon">💸</div>
+            <h3>Ignoring Small Expenses</h3>
+            <p>
+                Small daily expenses can add up and affect
+                your monthly budget.
+            </p>
+        </div>
+
+        <div class="mistake-card">
+            <div class="mistake-icon">⏰</div>
+            <h3>Late Payments</h3>
+            <p>
+                Forgetting payments can make it harder
+                to manage your monthly expenses.
+            </p>
+        </div>
+
+        <div class="mistake-card">
+            <div class="mistake-icon">📱</div>
+            <h3>Unused Subscriptions</h3>
+            <p>
+                Paying for subscriptions that you rarely
+                or never use.
+            </p>
+        </div>
+
+        <div class="mistake-card">
+            <div class="mistake-icon">📋</div>
+            <h3>No Spending Plan</h3>
+            <p>
+                Spending money without making a simple
+                plan can make budgeting difficult.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= STEP 5 ================= -->
+
+<!-- INFOGRAPHICS -->
+
+<section class="info-section" id="infographics">
+
+    <div class="section-title">
+        <h2>📊 Budget Infographics</h2>
+        <p>Understand budgeting through simple visuals</p>
+    </div>
+
+    <div class="info-container">
+
+        <div class="info-card">
+
+            <div class="chart">
+                <div class="chart-part needs">
+                    50%
+                </div>
+            </div>
+
+            <h3>Needs</h3>
+
+            <p>
+                Half of your income can be planned
+                for essential needs.
+            </p>
+
+        </div>
+
+
+        <div class="info-card">
+
+            <div class="chart">
+                <div class="chart-part wants">
+                    30%
+                </div>
+            </div>
+
+            <h3>Wants</h3>
+
+            <p>
+                A smaller portion can be used for
+                entertainment and personal wants.
+            </p>
+
+        </div>
+
+
+        <div class="info-card">
+
+            <div class="chart">
+                <div class="chart-part savings">
+                    20%
+                </div>
+            </div>
+
+            <h3>Savings</h3>
+
+            <p>
+                Keep a portion of your income
+                for future goals.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- SEARCH -->
+
+<section class="search-section" id="search">
+
+    <div class="section-title">
+
+        <h2>🔎 Search Budget Topics</h2>
+
+        <p>Find useful budgeting topics quickly</p>
+
+    </div>
+
+    <input
+        type="text"
+        id="searchBox"
+        placeholder="Search topics..."
+        onkeyup="searchTopics()"
+    >
+
+    <div class="topic-container" id="topicContainer">
+
+        <div class="topic-card">
+            <h3>Budgeting</h3>
+            <p>Learn how to plan your monthly money.</p>
+        </div>
+
+        <div class="topic-card">
+            <h3>Needs vs Wants</h3>
+            <p>Understand the difference between needs and wants.</p>
+        </div>
+
+        <div class="topic-card">
+            <h3>Savings</h3>
+            <p>Learn how to create savings goals.</p>
+        </div>
+
+        <div class="topic-card">
+            <h3>Expenses</h3>
+            <p>Track and manage your expenses.</p>
+        </div>
+
+        <div class="topic-card">
+            <h3>50-30-20 Rule</h3>
+            <p>Learn a simple way to divide your income.</p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- AI CHATBOT -->
+
+<section class="chatbot-section" id="chatbot">
+
+    <div class="section-title">
+
+        <h2>🤖 BudgetBee Assistant</h2>
+
+        <p>
+            Ask simple questions about budgeting
+        </p>
+
+    </div>
+
+
+    <div class="chatbot">
+
+        <div id="chatMessages" class="chat-messages">
+
+            <div class="bot-message">
+                Hi! 👋 I'm BudgetBee.
+                Ask me something about budgeting.
+            </div>
+
+        </div>
+
+
+        <div class="chat-input">
+
+            <input
+                type="text"
+                id="chatInput"
+                placeholder="Ask a question..."
+                onkeypress="handleChat(event)"
+            >
+
+            <button onclick="sendMessage()">
+                Send
+            </button>
+
+        </div>
+
+    </div>
+
+    <p class="chat-note">
+        Note: BudgetBee provides general educational
+        information and is not professional financial advice.
+    </p>
+
+</section>
+
+<!-- ================= STEP 6 ================= -->
+
+<!-- ABOUT US -->
+
+<section class="about-section" id="about">
+
+    <div class="section-title">
+        <h2>💡 About BudgetBasics</h2>
+        <p>Learn today, manage your money better tomorrow</p>
+    </div>
+
+    <div class="about-container">
+
+        <div class="about-content">
+
+            <h3>What is BudgetBasics?</h3>
+
+            <p>
+                BudgetBasics is an educational website designed
+                to help students understand basic money management.
+            </p>
+
+            <p>
+                It provides simple information about income,
+                expenses, needs, wants, savings and budgeting.
+            </p>
+
+            <div class="about-points">
+
+                <div>
+                    <span>✓</span>
+                    Easy to understand
+                </div>
+
+                <div>
+                    <span>✓</span>
+                    Student friendly
+                </div>
+
+                <div>
+                    <span>✓</span>
+                    Interactive tools
+                </div>
+
+                <div>
+                    <span>✓</span>
+                    Simple budgeting concepts
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="about-box">
+
+            <div class="about-icon">💰</div>
+
+            <h3>Our Goal</h3>
+
+            <p>
+                To make financial education simple,
+                useful and easy to understand.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- FEEDBACK -->
+
+<section class="feedback-section" id="feedback">
+
+    <div class="section-title">
+
+        <h2>⭐ Give Your Feedback</h2>
+
+        <p>Tell us what you think about BudgetBasics</p>
+
+    </div>
+
+    <div class="feedback-box">
+
+        <input
+            type="text"
+            id="feedbackName"
+            placeholder="Your Name"
+        >
+
+        <input
+            type="email"
+            id="feedbackEmail"
+            placeholder="Your Email"
+        >
+
+        <select id="feedbackRating">
+
+            <option value="">
+                Select Rating
+            </option>
+
+            <option value="5">⭐⭐⭐⭐⭐ Excellent</option>
+            <option value="4">⭐⭐⭐⭐ Very Good</option>
+            <option value="3">⭐⭐⭐ Good</option>
+            <option value="2">⭐⭐ Needs Improvement</option>
+            <option value="1">⭐ Poor</option>
+
+        </select>
+
+        <textarea
+            id="feedbackMessage"
+            placeholder="Write your feedback..."
+        ></textarea>
+
+        <button onclick="submitFeedback()">
+            Submit Feedback
+        </button>
+
+        <p id="feedbackResult"></p>
+
+    </div>
+
+</section>
+
+
+<!-- CONTACT US -->
+
+<section class="contact-section" id="contact">
+
+    <div class="section-title">
+
+        <h2>📩 Contact Us</h2>
+
+        <p>Have a question? Send us a message.</p>
+
+    </div>
+
+    <div class="contact-container">
+
+        <div class="contact-info">
+
+            <h3>Get In Touch</h3>
+
+            <p>
+                📧 Email: info@budgetbasics.com
+            </p>
+
+            <p>
+                📍 Location: Pakistan
+            </p>
+
+            <p>
+                🕒 Available: Monday - Friday
+            </p>
+
+        </div>
+
+
+        <div class="contact-form">
+
+            <input
+                type="text"
+                id="contactName"
+                placeholder="Your Name"
+            >
+
+            <input
+                type="email"
+                id="contactEmail"
+                placeholder="Your Email"
+            >
+
+            <textarea
+                id="contactMessage"
+                placeholder="Your Message"
+            ></textarea>
+
+            <button onclick="sendContact()">
+                Send Message
+            </button>
+
+            <p id="contactResult"></p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer class="main-footer">
+
+    <div class="footer-content">
+
+        <div class="footer-logo">
+            <h2>💰 BudgetBasics</h2>
+
+            <p>
+                Learn. Plan. Save.
+            </p>
+        </div>
+
+
+        <div class="footer-links">
+
+            <h3>Quick Links</h3>
+
+            <a href="#home">Home</a>
+            <a href="#basics">Budgeting Basics</a>
+            <a href="#rule">50-30-20 Rule</a>
+            <a href="#saving">Savings Goals</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+
+        </div>
+
+
+        <div class="footer-social">
+
+            <h3>Connect With Us</h3>
+
+            <p>📘 Facebook</p>
+            <p>📸 Instagram</p>
+            <p>✉️ Email</p>
+
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+
+        <p>
+            © 2026 BudgetBasics. All Rights Reserved.
+        </p>
+
+    </div>
+
+</footer>
+
+<!-- ================= STEP 7 ================= -->
+
+<section class="sitemap-section" id="sitemap">
+
+    <div class="section-title">
+        <h2>🗺️ Website Sitemap</h2>
+        <p>Explore all sections of BudgetBasics</p>
+    </div>
+
+    <div class="sitemap-container">
+
+        <!-- Main -->
+        <div class="sitemap-card">
+
+            <h3>🏠 Main</h3>
+
+            <a href="#home">Home</a>
+            <a href="#about">About Us</a>
+            <a href="#feedback">Feedback</a>
+            <a href="#contact">Contact Us</a>
+
+        </div>
+
+
+        <!-- Learning -->
+        <div class="sitemap-card">
+
+            <h3>📚 Learn</h3>
+
+            <a href="#basics">
+                Budgeting Basics
+            </a>
+
+            <a href="#needs">
+                Needs vs Wants
+            </a>
+
+            <a href="#rule">
+                50-30-20 Rule
+            </a>
+
+            <a href="#mistakes">
+                Money Mistakes
+            </a>
+
+            <a href="#sitemap">
+                Sitemap</a>
+
+        </div>
+
+
+        <!-- Tools -->
+        <div class="sitemap-card">
+
+            <h3>🛠️ Tools</h3>
+
+            <a href="#saving">
+                Savings Goals
+            </a>
+
+            <a href="#expenses">
+                Expense Planner
+            </a>
+
+            <a href="#search">
+                Search Topics
+            </a>
+
+            <a href="#chatbot">
+                BudgetBee Assistant
+            </a>
+
+        </div>
+
+
+        <!-- Resources -->
+        <div class="sitemap-card">
+
+            <h3>📊 Resources</h3>
+
+            <a href="#infographics">
+                Infographics
+            </a>
+
+            <a href="#feedback">
+                Give Feedback
+            </a>
+
+            <a href="#contact">
+                Get Support
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<button onclick="toggleMenu()" class="menu-btn">
+    ☰
+</button>
+
+<div class="nav-links" id="navLinks">
+
+    <a href="#home">Home</a>
+    <a href="#basics">Budgeting Basics</a>
+    <a href="#needs">Needs vs Wants</a>
+    <a href="#rule">50-30-20 Rule</a>
+    <a href="#saving">Savings</a>
+    <a href="#expenses">Expenses</a>
+    <a href="#sitemap">Sitemap</a>
+    <a href="#contact">Contact</a>
+
+</div>
+
 
     <script src="script.js"></script>
 

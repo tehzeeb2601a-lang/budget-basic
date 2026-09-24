@@ -1179,3 +1179,1110 @@ footer {
     }
 
 }
+/* ================= STEP 4 ================= */
+
+.expense-section {
+    padding: 80px 8%;
+    background: linear-gradient(135deg, #f5f6ff, #e9ebff);
+}
+
+.expense-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.expense-form,
+.expense-list {
+    width: 420px;
+    padding: 35px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+.expense-form h3,
+.expense-list h3 {
+    color: #20264d;
+}
+
+.expense-form input {
+    width: 90%;
+    padding: 13px;
+    margin: 8px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+.expense-form button {
+    margin-top: 15px;
+    padding: 13px 25px;
+    border: none;
+    border-radius: 10px;
+    background: #5967e8;
+    color: white;
+    cursor: pointer;
+}
+
+.expense-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    margin: 10px 0;
+    background: #f5f6ff;
+    border-radius: 10px;
+}
+
+.delete-btn {
+    border: none;
+    background: #ff5c5c;
+    color: white;
+    padding: 6px 10px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.expense-total {
+    margin-top: 20px;
+    padding: 15px;
+    background: #20264d;
+    color: white;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+/* Money Mistakes */
+
+.mistakes-section {
+    padding: 80px 8%;
+    background: white;
+}
+
+.mistakes-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.mistake-card {
+    width: 250px;
+    padding: 30px;
+    background: #f8f9ff;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.07);
+    transition: 0.3s;
+}
+
+.mistake-card:hover {
+    transform: translateY(-7px);
+}
+
+.mistake-icon {
+    font-size: 40px;
+}
+
+.mistake-card h3 {
+    color: #20264d;
+}
+
+.mistake-card p {
+    color: #666;
+    line-height: 1.6;
+}
+
+
+/* Mobile */
+
+@media (max-width: 768px) {
+
+    .expense-section,
+    .mistakes-section {
+        padding: 60px 5%;
+    }
+
+    .expense-form,
+    .expense-list {
+        width: 100%;
+    }
+
+    .mistake-card {
+        width: 100%;
+    }
+}
+/* ================= STEP 5 ================= */
+
+
+/* INFOGRAPHICS */
+
+.info-section {
+    padding: 80px 8%;
+    background: linear-gradient(135deg, #f5f6ff, #e9ebff);
+}
+
+.info-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.info-card {
+    width: 280px;
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.info-card:hover {
+    transform: translateY(-8px);
+}
+
+.info-card h3 {
+    color: #20264d;
+}
+
+.info-card p {
+    color: #666;
+    line-height: 1.6;
+}
+
+
+/* Simple Charts */
+
+.chart {
+    width: 120px;
+    height: 120px;
+    margin: auto;
+    border-radius: 50%;
+    background: #5967e8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.chart-part {
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #20264d;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+/* SEARCH */
+
+.search-section {
+    padding: 80px 8%;
+    background: white;
+    text-align: center;
+}
+
+#searchBox {
+    width: 70%;
+    max-width: 600px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    outline: none;
+    margin-bottom: 35px;
+}
+
+.topic-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.topic-card {
+    width: 230px;
+    padding: 25px;
+    background: #f5f6ff;
+    border-radius: 15px;
+    text-align: left;
+}
+
+.topic-card h3 {
+    color: #20264d;
+}
+
+.topic-card p {
+    color: #666;
+}
+
+
+/* CHATBOT */
+
+.chatbot-section {
+    padding: 80px 8%;
+    background: linear-gradient(135deg, #eef0ff, #f8f9ff);
+}
+
+.chatbot {
+    max-width: 600px;
+    margin: auto;
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.chat-messages {
+    height: 300px;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.bot-message,
+.user-message {
+    max-width: 75%;
+    padding: 12px 15px;
+    margin: 10px 0;
+    border-radius: 12px;
+}
+
+.bot-message {
+    background: #eef0ff;
+    color: #20264d;
+}
+
+.user-message {
+    background: #5967e8;
+    color: white;
+    margin-left: auto;
+}
+
+.chat-input {
+    display: flex;
+    padding: 15px;
+    border-top: 1px solid #eee;
+}
+
+.chat-input input {
+    flex: 1;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+.chat-input button {
+    margin-left: 10px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 10px;
+    background: #5967e8;
+    color: white;
+    cursor: pointer;
+}
+
+.chat-note {
+    text-align: center;
+    color: #777;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+    .info-section,
+    .search-section,
+    .chatbot-section {
+        padding: 60px 5%;
+    }
+
+    #searchBox {
+        width: 90%;
+    }
+
+    .info-card,
+    .topic-card {
+        width: 100%;
+    }
+
+    .chat-input {
+        flex-direction: column;
+    }
+
+    .chat-input button {
+        margin: 10px 0 0;
+    }
+}
+
+/* ================= STEP 6 ================= */
+
+
+/* ABOUT */
+
+.about-section {
+    padding: 80px 8%;
+    background: white;
+}
+
+.about-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.about-content {
+    width: 500px;
+}
+
+.about-content h3 {
+    color: #20264d;
+    font-size: 28px;
+}
+
+.about-content p {
+    color: #666;
+    line-height: 1.8;
+}
+
+.about-points {
+    margin-top: 25px;
+}
+
+.about-points div {
+    margin: 15px 0;
+    color: #444;
+}
+
+.about-points span {
+    color: #5967e8;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.about-box {
+    width: 300px;
+    padding: 40px;
+    text-align: center;
+    border-radius: 25px;
+    background: linear-gradient(135deg, #5967e8, #8a5cf6);
+    color: white;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.12);
+}
+
+.about-icon {
+    font-size: 60px;
+}
+
+.about-box h3 {
+    font-size: 25px;
+}
+
+
+/* FEEDBACK */
+
+.feedback-section {
+    padding: 80px 8%;
+    background: linear-gradient(135deg, #f5f6ff, #e9ebff);
+}
+
+.feedback-box {
+    max-width: 600px;
+    margin: auto;
+    padding: 35px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+.feedback-box input,
+.feedback-box select,
+.feedback-box textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 13px;
+    margin: 8px 0;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    outline: none;
+}
+
+.feedback-box textarea {
+    height: 120px;
+    resize: none;
+}
+
+.feedback-box button {
+    padding: 13px 25px;
+    border: none;
+    border-radius: 10px;
+    background: #5967e8;
+    color: white;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+#feedbackResult {
+    color: #5967e8;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+
+/* CONTACT */
+
+.contact-section {
+    padding: 80px 8%;
+    background: white;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.contact-info,
+.contact-form {
+    width: 420px;
+    padding: 35px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+.contact-info {
+    background: #20264d;
+    color: white;
+}
+
+.contact-info h3 {
+    font-size: 25px;
+}
+
+.contact-info p {
+    margin: 25px 0;
+}
+
+.contact-form {
+    background: #f8f9ff;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 13px;
+    margin: 8px 0;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+.contact-form textarea {
+    height: 120px;
+    resize: none;
+}
+
+.contact-form button {
+    padding: 13px 25px;
+    border: none;
+    border-radius: 10px;
+    background: #5967e8;
+    color: white;
+    cursor: pointer;
+}
+
+#contactResult {
+    color: #5967e8;
+    font-weight: bold;
+}
+
+
+/* FOOTER */
+
+.main-footer {
+    background: #20264d;
+    color: white;
+    padding-top: 50px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    gap: 40px;
+    flex-wrap: wrap;
+    padding: 0 8% 40px;
+}
+
+.footer-logo h2 {
+    color: white;
+}
+
+.footer-logo p {
+    color: #c8cbea;
+}
+
+.footer-links,
+.footer-social {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-links h3,
+.footer-social h3 {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color: #c8cbea;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    color: white;
+}
+
+.footer-social p {
+    color: #c8cbea;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid #3d446d;
+    color: #c8cbea;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+    .about-section,
+    .feedback-section,
+    .contact-section {
+        padding: 60px 5%;
+    }
+
+    .about-content,
+    .about-box,
+    .contact-info,
+    .contact-form {
+        width: 100%;
+    }
+
+    .footer-content {
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+
+/* ================= RESPONSIVE DESIGN ================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* Tablet */
+
+@media (max-width: 992px) {
+
+    .container {
+        width: 90%;
+    }
+
+    .hero-content {
+        text-align: center;
+    }
+
+    .rule-card,
+    .info-card,
+    .mistake-card,
+    .topic-card {
+        width: 45%;
+    }
+}
+
+
+/* Mobile */
+
+@media (max-width: 768px) {
+
+    .container {
+        width: 92%;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    h2 {
+        font-size: 27px;
+    }
+
+    h3 {
+        font-size: 21px;
+    }
+
+    .rule-container,
+    .saving-container,
+    .expense-container,
+    .info-container,
+    .mistakes-container,
+    .topic-container,
+    .about-container,
+    .contact-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .rule-card,
+    .saving-card,
+    .saving-info,
+    .expense-form,
+    .expense-list,
+    .info-card,
+    .mistake-card,
+    .topic-card,
+    .about-content,
+    .about-box,
+    .contact-info,
+    .contact-form {
+        width: 100%;
+        max-width: 500px;
+    }
+
+    .budget-calculator,
+    .feedback-box {
+        width: 100%;
+    }
+
+    #searchBox {
+        width: 100%;
+    }
+
+    .chatbot {
+        width: 100%;
+    }
+
+    .chat-input {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .chat-input button {
+        margin-left: 0;
+        width: 100%;
+    }
+
+}
+
+
+/* Small Mobile */
+
+@media (max-width: 480px) {
+
+    h1 {
+        font-size: 27px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    .rule-section,
+    .savings-section,
+    .expense-section,
+    .mistakes-section,
+    .info-section,
+    .search-section,
+    .chatbot-section,
+    .about-section,
+    .feedback-section,
+    .contact-section {
+        padding: 50px 5%;
+    }
+
+    .rule-card,
+    .info-card,
+    .mistake-card {
+        padding: 22px;
+    }
+
+    input,
+    textarea,
+    select {
+        max-width: 100%;
+    }
+
+}
+
+/* ================= SITEMAP ================= */
+
+.sitemap-section {
+    padding: 80px 8%;
+    background: linear-gradient(
+        135deg,
+        #f5f6ff,
+        #e9ebff
+    );
+}
+
+.sitemap-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.sitemap-card {
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+
+    display: flex;
+    flex-direction: column;
+
+    transition: 0.3s;
+}
+
+.sitemap-card:hover {
+    transform: translateY(-7px);
+}
+
+.sitemap-card h3 {
+    color: #20264d;
+    margin-bottom: 20px;
+}
+
+.sitemap-card a {
+    color: #666;
+    text-decoration: none;
+    padding: 8px 0;
+    transition: 0.3s;
+}
+
+.sitemap-card a:hover {
+    color: #5967e8;
+    padding-left: 5px;
+}
+
+
+/* Tablet */
+
+@media (max-width: 992px) {
+
+    .sitemap-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+    .sitemap-section {
+        padding: 60px 5%;
+    }
+
+    .sitemap-container {
+        grid-template-columns: 1fr;
+    }
+
+    .sitemap-card {
+        width: 100%;
+    }
+
+}
+
+/* =========================================
+   STEP 8 - FINAL RESPONSIVE DESIGN
+========================================= */
+
+/* Basic Fixes */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* Container */
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 992px) {
+
+    .container {
+        width: 92%;
+    }
+
+    .hero-content {
+        text-align: center;
+    }
+
+    .rule-card,
+    .info-card,
+    .mistake-card,
+    .topic-card {
+        width: 45%;
+    }
+
+    .sitemap-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 768px) {
+
+    .container {
+        width: 92%;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    h2 {
+        font-size: 27px;
+    }
+
+    h3 {
+        font-size: 21px;
+    }
+
+
+    /* Sections */
+
+    .rule-container,
+    .saving-container,
+    .expense-container,
+    .info-container,
+    .mistakes-container,
+    .topic-container,
+    .about-container,
+    .contact-container {
+
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    /* Cards */
+
+    .rule-card,
+    .saving-card,
+    .saving-info,
+    .expense-form,
+    .expense-list,
+    .info-card,
+    .mistake-card,
+    .topic-card,
+    .about-content,
+    .about-box,
+    .contact-info,
+    .contact-form {
+
+        width: 100%;
+        max-width: 500px;
+    }
+
+
+    /* Calculator */
+
+    .budget-calculator,
+    .feedback-box {
+
+        width: 100%;
+        max-width: 500px;
+    }
+
+
+    /* Search */
+
+    #searchBox {
+        width: 100%;
+    }
+
+
+    /* Chatbot */
+
+    .chatbot {
+        width: 100%;
+    }
+
+    .chat-input {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .chat-input input {
+        width: 100%;
+    }
+
+    .chat-input button {
+        margin-left: 0;
+        width: 100%;
+    }
+
+
+    /* Sitemap */
+
+    .sitemap-container {
+        grid-template-columns: 1fr;
+    }
+
+    .sitemap-card {
+        width: 100%;
+    }
+
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 480px) {
+
+    h1 {
+        font-size: 27px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+
+    .rule-section,
+    .savings-section,
+    .expense-section,
+    .mistakes-section,
+    .info-section,
+    .search-section,
+    .chatbot-section,
+    .about-section,
+    .feedback-section,
+    .contact-section,
+    .sitemap-section {
+
+        padding: 50px 5%;
+    }
+
+
+    .rule-card,
+    .info-card,
+    .mistake-card,
+    .sitemap-card {
+
+        padding: 22px;
+    }
+
+
+    input,
+    textarea,
+    select {
+
+        width: 100%;
+        max-width: 100%;
+    }
+
+
+    button {
+
+        max-width: 100%;
+    }
+
+}
+.menu-btn {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+
+    .menu-btn {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+}

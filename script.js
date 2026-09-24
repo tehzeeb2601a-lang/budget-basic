@@ -133,3 +133,129 @@ function calculateSaving() {
         📅 Estimated Time: ${months} month(s)
     `;
 }
+// ================= AI CHATBOT =================
+
+function sendMessage() {
+
+    let input = document.getElementById("chatInput");
+    let message = input.value.trim();
+
+    if (message === "") {
+        return;
+    }
+
+    let chatMessages = document.getElementById("chatMessages");
+
+    // User message
+    let userMessage = document.createElement("div");
+    userMessage.className = "user-message";
+    userMessage.innerText = message;
+
+    chatMessages.appendChild(userMessage);
+
+    // Bot reply
+    let botMessage = document.createElement("div");
+    botMessage.className = "bot-message";
+
+    botMessage.innerText = getBotReply(message.toLowerCase());
+
+    chatMessages.appendChild(botMessage);
+
+    // Input clear
+    input.value = "";
+
+    // Automatically scroll down
+    chatMessages.scrollTop = chatMessages.scrollHeight;
+}
+
+
+// ================= BOT REPLY =================
+
+function getBotReply(message) {
+
+    if (message.includes("budget")) {
+        return "A budget is a plan for how you will use your income.";
+    }
+
+    if (message.includes("saving")) {
+        return "Saving means keeping some money for your future goals.";
+    }
+
+    if (message.includes("need")) {
+        return "Needs are important things like food, education and transport.";
+    }
+
+    if (message.includes("want")) {
+        return "Wants are things you enjoy but can usually live without.";
+    }
+
+    if (message.includes("expense")) {
+        return "Tracking expenses helps you understand where your money is going.";
+    }
+
+    if (message.includes("50")) {
+        return "The 50-30-20 rule suggests 50% for needs, 30% for wants and 20% for savings.";
+    }
+
+    return "I can help you with budgeting, savings, needs, wants and expenses.";
+}
+
+
+// ================= ENTER KEY =================
+
+function handleChat(event) {
+
+    if (event.key === "Enter") {
+        sendMessage();
+    }
+}
+// ================= FEEDBACK =================
+
+function submitFeedback() {
+
+    let name = document.getElementById("feedbackName").value;
+    let rating = document.getElementById("feedbackRating").value;
+    let message = document.getElementById("feedbackMessage").value;
+
+    if (name === "" || rating === "" || message === "") {
+
+        document.getElementById("feedbackResult").innerText =
+            "Please fill all required fields.";
+
+        return;
+    }
+
+    document.getElementById("feedbackResult").innerText =
+        "Thank you, " + name + "! Your feedback has been submitted.";
+
+}
+
+
+// ================= CONTACT =================
+
+function sendContact() {
+
+    let name = document.getElementById("contactName").value;
+    let email = document.getElementById("contactEmail").value;
+    let message = document.getElementById("contactMessage").value;
+
+    if (name === "" || email === "" || message === "") {
+
+        document.getElementById("contactResult").innerText =
+            "Please fill all fields.";
+
+        return;
+    }
+
+    document.getElementById("contactResult").innerText =
+        "Thank you " + name + "! Your message has been received.";
+
+}
+
+function toggleMenu() {
+
+    let nav = document.getElementById("navLinks");
+
+    nav.classList.toggle("active");
+
+}
